@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/server",
+    "nodemon": "nodemon ./dist/server",
+    "dev": "concurrently \"tsc -w\" \"nodemon ./dist/server.js\""
+  },
+  "author": "Alef A. Araujo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "npm-run-script": "^0.0.4"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
